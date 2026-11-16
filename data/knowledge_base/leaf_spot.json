@@ -1,0 +1,59 @@
+{
+  "condition": "Leaf Spot",
+  "slug": "leaf_spot",
+  "type": "disease",
+  "status": "DRAFT_NEEDS_EXPERT_REVIEW",
+  "description": "Leaf spot refers to localized fungal or bacterial lesions that form discrete spots across the Aloe leaf surface, commonly aggravated by moisture.",
+  "symptoms": [
+    "Small circular to irregular brownish spots scattered across leaf blades",
+    "Spots may possess yellowish chlorotic halos surrounding necrotic centers",
+    "May coalesce into larger dry, necrotic patches in severe cases"
+  ],
+  "management": {
+    "sanitation": [
+      {
+        "step": "Prune severely spotted individual leaves to halt progressive infection to neighboring foliage.",
+        "evidence_level": "general plant pathology",
+        "sources": ["General Plant Pathology Principles (Agrios, Plant Pathology 5th Ed)"]
+      },
+      {
+        "step": "Clean and disinfect pruners between each cut with 70% alcohol.",
+        "evidence_level": "general plant pathology",
+        "sources": ["University Extension Sanitation Guidelines"]
+      }
+    ],
+    "cultural": [
+      {
+        "step": "Avoid wetting foliage during irrigation; keep leaf surfaces dry.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Plant Pathology Fungal Management Principles"]
+      },
+      {
+        "step": "Position plants where air circulation is active to deter ambient leaf surface humidity.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Extension Horticultural Care for Succulents"]
+      }
+    ],
+    "biological": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "chemical": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "precautions": [
+      {
+        "step": "Ensure adequate spacing between succulent pots to discourage airborne droplet and fungal spore transfer.",
+        "evidence_level": "general plant pathology",
+        "sources": ["General Plant Biosecurity Practices"]
+      }
+    ]
+  }
+}

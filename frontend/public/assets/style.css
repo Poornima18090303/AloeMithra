@@ -1,0 +1,200 @@
+/* =========================================================================
+   AloeMithra - Exact Mobile App Mockup Styling (Screen 3 Replication)
+   ========================================================================= */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&display=swap');
+
+html, body, [class*="css"], .stApp {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif !important;
+    background-color: #f2f7f2 !important;
+    color: #1b3d25 !important;
+}
+
+/* Base Light Botanical Canvas */
+.stApp {
+    background: 
+        radial-gradient(circle at 10% 8%, rgba(200, 230, 201, 0.5) 0%, transparent 45%),
+        radial-gradient(circle at 90% 20%, rgba(220, 245, 220, 0.55) 0%, transparent 40%),
+        #f2f7f2 !important;
+    min-height: 100vh !important;
+}
+
+/* Mobile-First Shell */
+.block-container {
+    max-width: 440px !important;
+    padding-top: 0.8rem !important;
+    padding-bottom: 3.5rem !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin: 0 auto !important;
+}
+
+/* Sidebar */
+section[data-testid="stSidebar"] {
+    background: #eef5ee !important;
+    border-right: 1px solid #d7e7d7 !important;
+}
+
+section[data-testid="stSidebar"] * {
+    color: #1b3d25 !important;
+}
+
+/* Top Phone Bar */
+.phone-top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.4rem 0 1.1rem 0;
+}
+
+.greeting-title {
+    font-size: 1.45rem;
+    font-weight: 800;
+    color: #163e23;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.greeting-sub {
+    font-size: 0.92rem;
+    color: #55755e;
+    font-weight: 500;
+    margin: 3px 0 0 0;
+}
+
+/* Hero Disease Detection Card (Screen 3) */
+.hero-card {
+    position: relative;
+    border-radius: 22px;
+    overflow: hidden;
+    margin-bottom: 0.9rem;
+    box-shadow: 0 10px 26px rgba(24, 61, 36, 0.12);
+    border: 1px solid #d5e8d4;
+    background: #183d24;
+}
+
+.hero-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 1.1rem;
+    background: linear-gradient(180deg, transparent 0%, rgba(15, 45, 24, 0.92) 80%);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+/* Main Scan Action Pill Button */
+div.main-scan-btn div.stButton > button {
+    width: 100% !important;
+    min-height: 50px !important;
+    border-radius: 999px !important;
+    font-size: 1.02rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    background: #183d24 !important;
+    border: none !important;
+    box-shadow: 0 8px 22px rgba(24, 61, 36, 0.25) !important;
+    transition: all 0.2s ease !important;
+}
+
+div.main-scan-btn div.stButton > button:hover {
+    background: #235532 !important;
+    transform: translateY(-2px) !important;
+    box-shadow: 0 12px 26px rgba(24, 61, 36, 0.32) !important;
+    color: #ffffff !important;
+}
+
+/* 4-Tile Action Grid Buttons (Matching Screen 3 Tiles) */
+div.action-tiles-grid div[data-testid="stColumn"] div.stButton > button {
+    width: 100% !important;
+    min-height: 98px !important;
+    background: #ffffff !important;
+    border: 1.5px solid #e2eee1 !important;
+    border-radius: 20px !important;
+    color: #163e23 !important;
+    box-shadow: 0 6px 18px rgba(24, 61, 36, 0.04) !important;
+    font-size: 0.95rem !important;
+    font-weight: 700 !important;
+    line-height: 1.4 !important;
+    transition: all 0.2s ease !important;
+    padding: 12px 8px !important;
+    white-space: pre-line !important;
+}
+
+div.action-tiles-grid div[data-testid="stColumn"] div.stButton > button:hover {
+    transform: translateY(-3px) !important;
+    border-color: #81c784 !important;
+    box-shadow: 0 12px 24px rgba(46, 125, 50, 0.12) !important;
+    background: #fdfefd !important;
+    color: #1b5e20 !important;
+}
+
+div.action-tiles-grid div[data-testid="stColumn"] div.stButton > button:active {
+    transform: scale(0.97) !important;
+}
+
+/* Quote Banner */
+.quote-banner {
+    background: #eaf4e9;
+    border: 1px solid #cce5cb;
+    border-radius: 16px;
+    padding: 12px 14px;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.quote-text {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #1e4d2b;
+    margin: 0;
+}
+
+.heart-slogan {
+    font-family: 'Caveat', cursive, sans-serif;
+    font-size: 1.35rem;
+    color: #1e4d2b;
+    text-align: center;
+    margin: 0.8rem 0;
+}
+
+/* Rounded Cards */
+.m-card {
+    background: #ffffff !important;
+    border-radius: 22px !important;
+    border: 1px solid #e2eee1 !important;
+    padding: 1.2rem !important;
+    margin-bottom: 1rem !important;
+    box-shadow: 0 8px 24px rgba(30, 77, 43, 0.05) !important;
+}
+
+/* Bottom Bar Simulation */
+.mockup-bottom-nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    margin-top: 1.5rem;
+    border-top: 1px solid #e2eee1;
+}
+
+/* General Button Styling for Other Pages */
+div.stButton > button {
+    width: 100% !important;
+    min-height: 48px !important;
+    border-radius: 999px !important;
+    font-size: 0.96rem !important;
+    font-weight: 700 !important;
+    color: #ffffff !important;
+    background: #183d24 !important;
+    border: none !important;
+    box-shadow: 0 8px 20px rgba(24, 61, 36, 0.2) !important;
+}
+
+div.stButton > button:hover {
+    background: #235532 !important;
+    color: #ffffff !important;
+}

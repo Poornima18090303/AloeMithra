@@ -1,0 +1,59 @@
+{
+  "condition": "Aloe Rust",
+  "slug": "aloe_rust",
+  "type": "disease",
+  "status": "DRAFT_NEEDS_EXPERT_REVIEW",
+  "description": "Aloe rust is a fungal infection characterized by small, elevated brownish or blackish pustules that develop on the leaf surface.",
+  "symptoms": [
+    "Small circular yellow or pale green spots turning into dark brown or black pustules",
+    "Raised blisters or spots on both upper and lower leaf surfaces",
+    "Surrounding tissue may show localized yellowing or chlorosis"
+  ],
+  "management": {
+    "sanitation": [
+      {
+        "step": "Prune and dispose of severely infected leaves using clean, sanitized cutting tools to reduce fungal spore load.",
+        "evidence_level": "general plant pathology",
+        "sources": ["General Plant Pathology Principles (Agrios, Plant Pathology 5th Ed)"]
+      },
+      {
+        "step": "Disinfect tools with 70% isopropyl alcohol between cuts to avoid transmitting spores between plants.",
+        "evidence_level": "general plant pathology",
+        "sources": ["University Extension Sanitation Guidelines"]
+      }
+    ],
+    "cultural": [
+      {
+        "step": "Avoid overhead watering; irrigate strictly at the soil base to keep foliage completely dry.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Plant Pathology Fungal Management Principles"]
+      },
+      {
+        "step": "Improve spacing between plants to enhance ventilation and accelerate surface moisture drying.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Extension Horticultural Care for Succulents"]
+      }
+    ],
+    "biological": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "chemical": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "precautions": [
+      {
+        "step": "Isolate newly acquired or visibly symptomatic plants to prevent potential spread to healthy specimens.",
+        "evidence_level": "general plant pathology",
+        "sources": ["General Plant Biosecurity Practices"]
+      }
+    ]
+  }
+}

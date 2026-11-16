@@ -1,0 +1,59 @@
+{
+  "condition": "Sunburn",
+  "slug": "sunburn",
+  "type": "environmental",
+  "status": "DRAFT_NEEDS_EXPERT_REVIEW",
+  "description": "Sunburn is an abiotic environmental condition resulting from intense direct ultraviolet solar radiation and high heat exposure, not a pathogen or infectious disease.",
+  "symptoms": [
+    "Reddish, brownish, or bleached bronze discoloration on sun-exposed upper surfaces",
+    "Leaves may appear deflated, dry, or leathery in heavily exposed zones",
+    "Symptoms occur uniformly on sunlight-facing leaf aspects rather than as random circular spots"
+  ],
+  "management": {
+    "sanitation": [
+      {
+        "step": "Do not treat with fungicides or bactericides; sunburn is purely an abiotic physiological stress.",
+        "evidence_level": "aloe-specific",
+        "sources": ["Succulent Environmental Physiology Research"]
+      },
+      {
+        "step": "Severely desiccated, crispy leaves that have entirely collapsed may be gently pruned at the base if desired for plant aesthetics.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Horticultural Management of Abiotic Plant Injuries"]
+      }
+    ],
+    "cultural": [
+      {
+        "step": "Protect plant from harsh, unshaded midday sun (11 AM to 4 PM); move to bright, indirect sunlight or deploy shade cloth (30-50% shade).",
+        "evidence_level": "aloe-specific",
+        "sources": ["Extension Succulent Cultivation Notes"]
+      },
+      {
+        "step": "Acclimate plants gradually to increased light intensity over 2 to 3 weeks rather than abrupt relocation.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Plant Stress Physiology Standards"]
+      }
+    ],
+    "biological": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "chemical": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "precautions": [
+      {
+        "step": "Never apply chemical sprays or foliar fertilizers during high-temperature midday sun, as this exacerbates cellular leaf scorch.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Agricultural Chemical Safety and Application Guide"]
+      }
+    ]
+  }
+}

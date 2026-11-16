@@ -1,0 +1,59 @@
+{
+  "condition": "Anthracnose",
+  "slug": "anthracnose",
+  "type": "disease",
+  "status": "DRAFT_NEEDS_EXPERT_REVIEW",
+  "description": "Anthracnose is a fungal disease causing circular, sunken, dark lesions on succulent leaves, often progressing under moist and humid conditions.",
+  "symptoms": [
+    "Sunken, water-soaked round or oval dark lesions on leaf surfaces",
+    "Lesions may expand and merge, causing leaf tissue to become soft or necrotic",
+    "Older lesions may develop dark concentric rings or spore masses under persistent moisture"
+  ],
+  "management": {
+    "sanitation": [
+      {
+        "step": "Carefully remove and dispose of badly affected leaves to eliminate primary inoculum sources.",
+        "evidence_level": "general plant pathology",
+        "sources": ["General Plant Pathology Principles (Agrios, Plant Pathology 5th Ed)"]
+      },
+      {
+        "step": "Sterilize shears or knives with rubbing alcohol or a mild bleach solution between prunings.",
+        "evidence_level": "general plant pathology",
+        "sources": ["University Extension Sanitation Guidelines"]
+      }
+    ],
+    "cultural": [
+      {
+        "step": "Ensure high air circulation around plants and keep humidity levels moderate in growing spaces.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Extension Horticultural Care for Succulents"]
+      },
+      {
+        "step": "Water exclusively from below at the container base; avoid spraying or splashing water onto foliage.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Plant Pathology Fungal Management Principles"]
+      }
+    ],
+    "biological": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "chemical": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "precautions": [
+      {
+        "step": "Do not compost diseased tissue in household compost bins where fungal spores can survive.",
+        "evidence_level": "general plant pathology",
+        "sources": ["University Extension Composting Guidelines"]
+      }
+    ]
+  }
+}

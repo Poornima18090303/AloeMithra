@@ -1,0 +1,54 @@
+{
+  "condition": "Healthy",
+  "slug": "healthy",
+  "type": "healthy",
+  "status": "DRAFT_NEEDS_EXPERT_REVIEW",
+  "description": "The leaf exhibits healthy coloration, firm turgid succulent tissue, and no evident fungal, bacterial, or abiotic lesion patterns.",
+  "symptoms": [
+    "Firm, plump green foliage without sunken or discolored lesions",
+    "Consistent natural texture and characteristic pale spots without necrosis",
+    "No pustules, blights, or necrotic margins"
+  ],
+  "management": {
+    "sanitation": [
+      {
+        "step": "Maintain routine cleanliness by removing naturally dried or senescent bottom leaves periodically.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Standard Horticultural Cultivation Guidelines"]
+      }
+    ],
+    "cultural": [
+      {
+        "step": "Maintain balanced indirect or filtered sunlight, allowing soil to dry thoroughly between moderate waterings.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Succulent Care Extension Notes"]
+      },
+      {
+        "step": "Provide well-draining cactus/succulent potting mix with adequate container drainage holes.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Standard Horticultural Cultivation Guidelines"]
+      }
+    ],
+    "biological": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "chemical": [
+      {
+        "step": "To be added from reviewed research sources.",
+        "evidence_level": "none",
+        "sources": []
+      }
+    ],
+    "precautions": [
+      {
+        "step": "Avoid sudden transfers from indoor low light into unshaded, intense direct outdoor sunlight.",
+        "evidence_level": "general plant pathology",
+        "sources": ["Standard Horticultural Cultivation Guidelines"]
+      }
+    ]
+  }
+}
