@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AloeMithra 🌿
 
 **AloeMithra** is a mobile-first web application designed to detect Aloe vera leaf health conditions from photographs and provide research-based management guidance.
@@ -138,3 +139,6 @@ AloeMithra/
 │   └── test_phase5_e2e.py
 └── requirements.txt
 ```
+=======
+# AloeMithra
+>>>>>>> 086d8377db56b134425f8b4f1219f5aa92eaacd7
