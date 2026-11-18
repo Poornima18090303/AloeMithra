@@ -11,7 +11,16 @@ export const listLocales = () => api.get("/locales");
 export const analyzeLeaf = (formData) =>
   api.post("/analyze", formData, { headers: { "Content-Type": "multipart/form-data" } });
 
-export const chatMessage = (message) => api.post("/chat", { message });
+export const chatMessage = (message, lang = "en") => api.post("/chat", { message, lang });
+
+export const transcribeAudio = (audioBlob, lang = "en") => {
+  const formData = new FormData();
+  formData.append("audio", audioBlob, "speech.wav");
+  formData.append("lang", lang);
+  return api.post("/transcribe", formData, {
+    headers: { "Content-Type": "multipart/form-data" },
+  });
+};
 
 export const signIn = (username, password) =>
   api.post("/auth/signin", { username, password });

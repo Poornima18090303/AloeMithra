@@ -78,7 +78,9 @@ def api_signup():
     password = body.get("password", "")
     language = body.get("language", "en")
     success, msg, user = sign_up(username, password, language)
-    if success:
+    if success and user:
+        user = dict(user)
+        user.pop("password_hash", None)
         session["user"] = user
     return jsonify({"success": success, "message": msg, "user": user if success else None})
 
@@ -88,18 +90,23 @@ def api_signin():
     username = body.get("username", "").strip()
     password = body.get("password", "")
     success, msg, user = sign_in(username, password)
-    if success:
+    if success and user:
+        user = dict(user)
+        user.pop("password_hash", None)
         session["user"] = user
     return jsonify({"success": success, "message": msg, "user": user if success else None})
 
 @app.route("/api/auth/signout", methods=["POST"])
 def api_signout():
-    session.pop("user", None)
-    return jsonify({"success": True})
+    session.clear()
+    return jsonify({"success": True, "message": "Signed out successfully"})
 
 @app.route("/api/auth/me")
 def api_me():
     user = session.get("user")
+    if user:
+        user = dict(user)
+        user.pop("password_hash", None)
     return jsonify({"user": user})
 
 @app.route("/api/user/language", methods=["POST"])
@@ -232,8 +239,53 @@ def api_clear_history():
 def api_chat():
     body = request.get_json(force=True)
     message = body.get("message", "")
-    reply = generate_bot_reply(message)
-    return jsonify({"reply": reply})
+    lang = body.get("lang", "en")
+    reply = generate_bot_reply(message, lang=lang)
+    replies = {
+        "en": generate_bot_reply(message, lang="en"),
+        "kn": generate_bot_reply(message, lang="kn"),
+        "hi": generate_bot_reply(message, lang="hi"),
+    }
+    return jsonify({"reply": reply, "replies": replies})
+
+
+# ---------------------------------------------------------------------------
+# Voice Speech-to-Text Transcription
+# ---------------------------------------------------------------------------
+@app.route("/api/transcribe", methods=["POST"])
+def api_transcribe():
+    """
+    Transcribes audio recorded from the browser mic into text.
+    Supports Kannada ('kn-IN'), Hindi ('hi-IN'), and English ('en-US').
+    """
+    if "audio" not in request.files:
+        return jsonify({"error": "No audio file provided", "status": "error"}), 400
+
+    file = request.files["audio"]
+    lang = request.form.get("lang", "en")
+
+    bcp47_map = {
+        "kn": "kn-IN",
+        "hi": "hi-IN",
+        "en": "en-US",
+    }
+    bcp47 = bcp47_map.get(lang, "en-US")
+
+    try:
+        import speech_recognition as sr
+        r = sr.Recognizer()
+        r.energy_threshold = 280
+        r.dynamic_energy_threshold = True
+
+        with sr.AudioFile(file) as source:
+            audio = r.record(source)
+
+        transcript = r.recognize_google(audio, language=bcp47)
+        return jsonify({"transcript": transcript, "status": "ok"})
+    except sr.UnknownValueError:
+        return jsonify({"transcript": "", "status": "no_speech", "message": "No speech detected"}), 200
+    except Exception as e:
+        return jsonify({"error": str(e), "status": "error"}), 500
 
 
 if __name__ == "__main__":

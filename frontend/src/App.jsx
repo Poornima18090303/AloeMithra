@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import Analyze from "./pages/Analyze";
 import History from "./pages/History";
+import SignIn from "./pages/SignIn";
 import Chatbot from "./pages/Chatbot";
 import VoiceAssistant from "./pages/VoiceAssistant";
 import About from "./pages/About";
@@ -24,6 +25,8 @@ export default function App() {
           <Route path="/app"     element={<Dashboard />} />
           <Route path="/analyze" element={<Analyze />} />
           <Route path="/history" element={<History />} />
+          <Route path="/signin"  element={<SignIn />} />
+          <Route path="/signup"  element={<SignIn initialSignUp={true} />} />
           <Route path="/chatbot" element={<Chatbot />} />
           <Route path="/voice"   element={<VoiceAssistant />} />
           <Route path="/about"   element={<About />} />

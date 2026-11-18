@@ -153,7 +153,7 @@ export default function Navbar() {
           </button>
         ) : (
           <Link
-            to="/history"
+            to="/signin"
             className="btn-pill-primary"
             style={{ padding: "0.55rem 1.35rem", fontSize: "0.88rem" }}
           >

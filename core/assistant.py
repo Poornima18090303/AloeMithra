@@ -71,12 +71,14 @@ RUST_KW = [
     "aloe rest",        # common typo
     "alo rust", "rust treatment", "rust cure", "rust symptom",
     "rust on leaf", "rust on aloe",
-    # Kannada
+    # Kannada script
     "ತುಕ್ಕು", "ತುಕ್ಕು ರೋಗ", "ಆಲೋ ತುಕ್ಕು", "ಕಿತ್ತಳೆ ಚುಕ್ಕೆ",
     "ಕಂದು ಗುಳ್ಳೆ", "ಶಿಲೀಂಧ್ರ ರೋಗ",
-    # Hindi
+    # Romanized Kannada
+    "tukku", "tukku roga", "thukku", "thukku roga", "kendale",
+    # Hindi script & Romanized
     "जंग", "रतुआ", "एलो रस्ट", "नारंगी धब्बे", "भूरे उभार", "फंगल धब्बे",
-    "पत्ती पर जंग", "जंग रोग",
+    "पत्ती पर जंग", "जंग रोग", "jang", "jung", "ratua", "gerua",
 ]
 
 # ── Anthracnose ────────────────────────────────────────────────────────────
@@ -86,12 +88,14 @@ ANTHR_KW = [
     "dark lesion", "oval spot", "anthracnos", "anthrcnose", "antracnose",
     "dark spot", "wet spot", "rotting spot", "leaf rot", "anthracnose cure",
     "anthracnose treatment", "anthracnose symptom",
-    # Kannada
+    # Kannada script
     "ಆಂಥ್ರಾಕ್ನೋಸ್", "ಕಪ್ಪು ಚುಕ್ಕೆ", "ಮುಳುಗಿದ ಚುಕ್ಕೆ", "ನೀರಿನ ಕಲೆ",
     "ತೇವ ಕಲೆ", "ಕಪ್ಪು ಕಲೆ ರೋಗ",
-    # Hindi
+    # Romanized Kannada
+    "anthracnose", "kappu chukke", "neerina kale", "anthrac",
+    # Hindi script & Romanized
     "एन्थ्रेकनोज", "काला धब्बा", "धंसे धब्बे", "पानी भरे धब्बे",
-    "गहरे घाव", "काले धब्बे",
+    "गहरे घाव", "काले धब्बे", "kala dhabba", "anthracnose",
 ]
 
 # ── Leaf Spot ──────────────────────────────────────────────────────────────
@@ -100,12 +104,14 @@ LEAFSPOT_KW = [
     "leaf spot", "leafspot", "brown spot", "circular spot", "spots on leaf",
     "yellow halo", "irregular spot", "spotted leaf", "spot disease",
     "leaf spot treatment", "leaf spot cure", "leaf spotting",
-    # Kannada
+    # Kannada script
     "ಎಲೆ ಚುಕ್ಕೆ", "ಎಲೆ ಮೇಲೆ ಚುಕ್ಕೆ", "ಬ್ರೌನ್ ಚುಕ್ಕೆ", "ಗೋಲಾಕಾರ ಚುಕ್ಕೆ",
     "ಹಳದಿ ಹಾಲೊ", "ಚುಕ್ಕೆ ರೋಗ",
-    # Hindi
+    # Romanized Kannada
+    "ele chukke", "ele mele chukke", "chukke roga", "leaf spot",
+    # Hindi script & Romanized
     "पत्ती धब्बा", "पत्ते पर धब्बा", "भूरे गोल धब्बे", "पीला घेरा",
-    "धब्बे रोग", "लीफ स्पॉट",
+    "धब्बे रोग", "लीफ स्पॉट", "patti dhabba", "patte par dhabba",
 ]
 
 # ── Sunburn ────────────────────────────────────────────────────────────────
@@ -115,12 +121,14 @@ SUNBURN_KW = [
     "bronze leaf", "red leaf", "brown tip", "white patch", "scorched", "burnt leaf",
     "sunscorch", "sun scorch", "too much sun", "sun stress", "light burn",
     "heat damage", "heat stress", "sunburn treatment", "sunburn cure",
-    # Kannada
+    # Kannada script
     "ಸೂರ್ಯ ಬೆಂಕಿ", "ಸನ್‌ಬರ್ನ್", "ಬಿಸಿಲು ಹಾನಿ", "ಎಲೆ ಸುಡುವಿಕೆ",
     "ಕೆಂಪು ಎಲೆ", "ಬೆಳ್ಳನೆ ಎಲೆ", "ಶಾಖ ಒತ್ತಡ",
-    # Hindi
+    # Romanized Kannada
+    "sunburn", "bisilu", "bisilu hani", "soorya benki", "sun burn",
+    # Hindi script & Romanized
     "धूप से जलन", "सनबर्न", "धूप की क्षति", "झुलसी पत्ती", "लाल पत्ती",
-    "सफेद धब्बा", "गर्मी से नुकसान", "यूवी नुकसान",
+    "सफेद धब्बा", "गर्मी से नुकसान", "यूवी नुकसान", "dhoop se jalan", "sunburn",
 ]
 
 # ── Healthy / General Care ─────────────────────────────────────────────────
@@ -131,12 +139,14 @@ HEALTHY_KW = [
     "repot", "drainage", "how to grow", "how to care", "aloe care",
     "general care", "prevent disease", "prevention", "maintenance",
     "healthy aloe", "keep healthy", "potting mix",
-    # Kannada
+    # Kannada script
     "ಆರೋಗ್ಯಕರ", "ನೀರು ಹಾಕುವುದು", "ಮಣ್ಣು", "ಬೆಳಕು", "ಗೊಬ್ಬರ",
     "ಆಲೋ ವೇರಾ ಆರೈಕೆ", "ತಡೆಗಟ್ಟುವಿಕೆ", "ನಿರ್ವಹಣೆ",
-    # Hindi
+    # Romanized Kannada
+    "aarogya", "aarogyakara", "neeru", "mannu", "belaku", "gobbera", "aaraike",
+    # Hindi script & Romanized
     "स्वस्थ", "पानी देना", "मिट्टी", "रोशनी", "खाद", "देखभाल",
-    "एलो वेरा की देखभाल", "रोकथाम", "रखरखाव",
+    "एलो वेरा की देखभाल", "रोकथाम", "रखरखाव", "paani", "mitti", "dekhbhal",
 ]
 
 # ── Greeting ───────────────────────────────────────────────────────────────
@@ -144,10 +154,10 @@ GREET_KW = [
     # English
     "hello", "hi", "hey", "good morning", "good evening", "howdy", "help",
     "start", "begin", "what can you do", "what do you know",
-    # Kannada
-    "ನಮಸ್ಕಾರ", "ಹಲೋ", "ಹಾಯ್", "ನಿಮಗೆ ನಮಸ್ಕಾರ",
-    # Hindi
-    "नमस्ते", "हेलो", "हाय", "मदद", "शुरू",
+    # Kannada script & Romanized
+    "ನಮಸ್ಕಾರ", "ಹಲೋ", "ಹಾಯ್", "ನಿಮಗೆ ನಮಸ್ಕಾರ", "namaskara", "namaskaram",
+    # Hindi script & Romanized
+    "नमस्ते", "हेलो", "हाय", "मदद", "शुरू", "namaste", "pranam",
 ]
 
 # ── Symptoms question (generic) ─────────────────────────────────────────────
@@ -268,15 +278,199 @@ def _fallback_reply(original_msg: str) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Language-aware Response Builders (Kannada & Hindi)
+# ---------------------------------------------------------------------------
+
+def _rust_reply_kn() -> str:
+    return (
+        "🍂 **ತುಕ್ಕು ರೋಗ (Aloe Rust - ಶಿಲೀಂಧ್ರ ಸೋಂಕು)**\n\n"
+        "**🔎 ಲಕ್ಷಣಗಳು:**\n"
+        "• ಎಲೆಯ ಮೇಲ್ಮೈನಲ್ಲಿ ಸಣ್ಣ ಹಳದಿ ಅಥವಾ ತಿಳಿ ಚುಕ್ಕೆಗಳು ಕಾಣಿಸುತ್ತವೆ.\n"
+        "• ನಂತರ ಅವು ಕಿತ್ತಳೆ / ತಿಳಿಗಂದು ಬಣ್ಣದ ಎತ್ತರವಾದ ಗುಳ್ಳೆಗಳಾಗಿ ಮಾರ್ಪಡುತ್ತವೆ.\n"
+        "• ಮುಟ್ಟಿದಾಗ ತುಕ್ಕು-ಬಣ್ಣದ ಪುಡಿ ಬರಬಹುದು.\n\n"
+        "**🛠️ ನಿರ್ವಹಣೆ:**\n"
+        "• **ಸ್ವಚ್ಛತೆ:** ತೀವ್ರವಾಗಿ ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ಶುದ್ಧೀಕರಿಸಿದ ಕತ್ತರಿಯಿಂದ ಕತ್ತರಿಸಿ ತೆಗೆಯಿರಿ.\n"
+        "• ನೀರನ್ನು ನೇರವಾಗಿ ಮಣ್ಣಿಗೆ ಕೊಡಿ — ಎಲೆ ಒದ್ದೆಯಾಗದಿರಲಿ.\n"
+        "• ಸಸ್ಯಗಳ ನಡುವೆ ಸಾಕಷ್ಟು ಅಂತರ ಇರಿಸಿ ಒಳ್ಳೆಯ ಗಾಳಿ ಆಡಲು ಅನುವು ಮಾಡಿ.\n\n"
+        "⚠️ *ಈ ಮಾಹಿತಿ ಸಂಶೋಧನೆ ಆಧಾರಿತ DRAFT — ದೊಡ್ಡ ಸಮಸ್ಯೆಗೆ ಕೃಷಿ ತಜ್ಞರನ್ನು ಸಂಪರ್ಕಿಸಿ.*"
+    )
+
+def _rust_reply_hi() -> str:
+    return (
+        "🍂 **तुकड़ा/जंग रोग (Aloe Rust - फंगल संक्रमण)**\n\n"
+        "**🔎 लक्षण:**\n"
+        "• पत्ती की सतह पर छोटे पीले या हल्के धब्बे दिखाई देते हैं।\n"
+        "• बाद में ये नारंगी/भूरे रंग के उभरे हुए पस्ट्यूल (फुंसी) बन जाते हैं।\n"
+        "• छूने पर जंग जैसा नारंगी पाउडर निकल सकता है।\n\n"
+        "**🛠️ प्रबंधन:**\n"
+        "• **सफाई:** बुरी तरह संक्रमित पत्तियों को कीटाणुरहित कैंची से काटकर हटाएं।\n"
+        "• पानी सीधे मिट्टी में दें — पत्तियों को गीला न करें।\n"
+        "• पौधों के बीच पर्याप्त दूरी रखें ताकि हवा का प्रवाह हो।\n\n"
+        "⚠️ *यह जानकारी DRAFT है — बड़े प्रकोप के लिए कृषि विशेषज्ञ से सलाह लें।*"
+    )
+
+def _anthracnose_reply_kn() -> str:
+    return (
+        "🥀 **ಆಂಥ್ರಾಕ್ನೋಸ್ (ಶಿಲೀಂಧ್ರ ಗಾಯಗಳು)**\n\n"
+        "**🔎 ಲಕ್ಷಣಗಳು:**\n"
+        "• ಎಲೆಯ ಮೇಲೆ ಮುಳುಗಿದ, ದುಂಡನೆಯ ಅಥವಾ ಅಂಡಾಕಾರದ ನೀರಿನ ಕಲೆಗಳು.\n"
+        "• ತೇವ ಹವಾಮಾನದಲ್ಲಿ ಗಾಯಗಳ ಮೇಲೆ ಗುಲಾಬಿ ಬಣ್ಣದ ಬೀಜಾಣು ರಾಶಿ ಕಾಣಿಸಬಹುದು.\n\n"
+        "**🛠️ ನಿರ್ವಹಣೆ:**\n"
+        "• **ಸ್ವಚ್ಛತೆ:** ಸೋಂಕಿತ ಎಲೆಗಳನ್ನು ತೆಗೆದು ಕಸದ ತೊಟ್ಟಿಗೆ ಹಾಕಿ (ಗೊಬ್ಬರ ಮಾಡಬೇಡಿ).\n"
+        "• ಗಾಳಿ ಆಡಲು ಅನುವು ಮಾಡಿ, ತೇವ ಕಡಿಮೆ ಮಾಡಿ.\n"
+        "• ಮಣ್ಣು ಸಂಪೂರ್ಣ ಒಣಗಿದ ನಂತರ ಮಾತ್ರ ನೀರು ಕೊಡಿ.\n\n"
+        "⚠️ *ಈ ಮಾಹಿತಿ DRAFT — ದೊಡ್ಡ ಸಮಸ್ಯೆಗೆ ಕೃಷಿ ತಜ್ಞರನ್ನು ಸಂಪರ್ಕಿಸಿ.*"
+    )
+
+def _anthracnose_reply_hi() -> str:
+    return (
+        "🥀 **एन्थ्रेकनोज (फंगल घाव)**\n\n"
+        "**🔎 लक्षण:**\n"
+        "• पत्ती पर धंसे हुए, गोल या अंडाकार, पानी से भरे दिखने वाले काले घाव।\n"
+        "• नम मौसम में घावों पर गुलाबी या नारंगी रंग के बीजाणु दिख सकते हैं।\n\n"
+        "**🛠️ प्रबंधन:**\n"
+        "• **सफाई:** बुरी तरह संक्रमित पत्तियों को हटाएं (खाद में न डालें)।\n"
+        "• नमी कम करें, वेंटिलेशन बढ़ाएं।\n"
+        "• मिट्टी पूरी तरह सूखने के बाद ही पानी दें।\n\n"
+        "⚠️ *यह जानकारी DRAFT है — बड़े प्रकोप के लिए कृषि विशेषज्ञ से सलाह लें।*"
+    )
+
+def _leafspot_reply_kn() -> str:
+    return (
+        "🍃 **ಎಲೆ ಚುಕ್ಕೆ ರೋಗ (Leaf Spot)**\n\n"
+        "**🔎 ಲಕ್ಷಣಗಳು:**\n"
+        "• ಎಲೆಯ ಮೇಲೆ ಗೋಲಾಕಾರ ಅಥವಾ ಅನಿಯಮಿತ ಕಂದು/ಕಪ್ಪು ಚುಕ್ಕೆಗಳು.\n"
+        "• ಚುಕ್ಕೆಗಳ ಸುತ್ತ ಹಳದಿ ಹಾಲೊ ಇರಬಹುದು ಮತ್ತು ದೊಡ್ಡ ಸತ್ತ ಪ್ರದೇಶಗಳಾಗಬಹುದು.\n\n"
+        "**🛠️ ನಿರ್ವಹಣೆ:**\n"
+        "• ಹೆಚ್ಚು ಚುಕ್ಕೆ ಹೊಂದಿದ ಎಲೆಗಳನ್ನು ಕತ್ತರಿಸಿ ತೆಗೆಯಿರಿ.\n"
+        "• ನೀರಾವರಿ ಸಮಯದಲ್ಲಿ ಎಲೆ ಒದ್ದೆಯಾಗದಂತೆ ನೋಡಿಕೊಳ್ಳಿ.\n"
+        "• ಸಸ್ಯದ ಸುತ್ತ ಒಳ್ಳೆಯ ಗಾಳಿ ಆಡಲು ಅನುವು ಮಾಡಿ.\n\n"
+        "⚠️ *ಈ ಮಾಹಿತಿ DRAFT — ದೊಡ್ಡ ಸಮಸ್ಯೆಗೆ ಕೃಷಿ ತಜ್ಞರನ್ನು ಸಂಪರ್ಕಿಸಿ.*"
+    )
+
+def _leafspot_reply_hi() -> str:
+    return (
+        "🍃 **पत्ती धब्बा रोग (Leaf Spot)**\n\n"
+        "**🔎 लक्षण:**\n"
+        "• पत्तियों पर गोल या अनियमित भूरे/काले धब्बे।\n"
+        "• धब्बों के चारों ओर पीला घेरा हो सकता है और वे बड़े मृत क्षेत्र बना सकते हैं।\n\n"
+        "**🛠️ प्रबंधन:**\n"
+        "• अधिक धब्बे वाली पत्तियों को कीटाणुरहित उपकरण से काटकर हटाएं।\n"
+        "• सिंचाई के दौरान पत्तियों को गीला होने से बचाएं।\n"
+        "• अच्छे वायु संचार का प्रबंध करें।\n\n"
+        "⚠️ *यह जानकारी DRAFT है — बड़े प्रकोप के लिए कृषि विशेषज्ञ से सलाह लें।*"
+    )
+
+def _sunburn_reply_kn() -> str:
+    return (
+        "☀️ **ಸನ್‌ಬರ್ನ್ (ಬಿಸಿಲು ಹಾನಿ — ರೋಗ ಅಲ್ಲ!)**\n\n"
+        "**🔎 ಲಕ್ಷಣಗಳು:**\n"
+        "• ಸೂರ್ಯನ ಬೆಳಕಿಗೆ ತೆರೆದ ಎಲೆಯ ಮೇಲ್ಭಾಗದಲ್ಲಿ ಕೆಂಪು, ಕಂಚು ಅಥವಾ ಬಿಳಿ ಒಣ ಪ್ಯಾಚ್.\n"
+        "• ಪ್ರಭಾವಿತ ಪ್ರದೇಶ ಒಣಗಿ ಕಾಗದದಂತೆ ಆಗುತ್ತದೆ — ಬೀಜಾಣು ಅಥವಾ ತೇವ ಇರುವುದಿಲ್ಲ.\n\n"
+        "**🛠️ ನಿರ್ವಹಣೆ:**\n"
+        "• **⛔ ಶಿಲೀಂಧ್ರನಾಶಕ ಬಳಸಬೇಡಿ!** ಇದು ಬಿಸಿಲು ಹಾನಿ, ಸೋಂಕಲ್ಲ.\n"
+        "• ಸಸ್ಯವನ್ನು ಪ್ರಕಾಶಮಾನ ಆದರೆ ಪರೋಕ್ಷ ಬೆಳಕಿಗೆ ಸ್ಥಳಾಂತರಿಸಿ.\n"
+        "• ಹೊರಗೆ ಬಿಡುವಾಗ ಮಧ್ಯಾಹ್ನ 11 ರಿಂದ 4 ರ ವರೆಗೆ 30-50% ನೆರಳು ಬಟ್ಟೆ ಬಳಸಿ.\n\n"
+        "⚠️ *ಈ ಮಾಹಿತಿ DRAFT — ದೊಡ್ಡ ಸಮಸ್ಯೆಗೆ ಕೃಷಿ ತಜ್ಞರನ್ನು ಸಂಪರ್ಕಿಸಿ.*"
+    )
+
+def _sunburn_reply_hi() -> str:
+    return (
+        "☀️ **धूप से जलन (Sunburn — यह बीमारी नहीं है!)**\n\n"
+        "**🔎 लक्षण:**\n"
+        "• सूरज की धूप से प्रभावित पत्ती के ऊपरी भाग पर लाल, कांस्य या सफेद सूखे धब्बे।\n"
+        "• प्रभावित क्षेत्र सूखा और कागज़ जैसा होता है — कोई बीजाणु या गीलापन नहीं।\n\n"
+        "**🛠️ प्रबंधन:**\n"
+        "• **⛔ कभी भी फफूंदनाशक का उपयोग न करें!** यह UV/गर्मी से चोट है, संक्रमण नहीं।\n"
+        "• पौधे को तेज़ लेकिन अप्रत्यक्ष रोशनी में ले जाएं।\n"
+        "• बाहर रखने पर दोपहर 11 बजे से 4 बजे के बीच 30-50% छाया कपड़ा लगाएं।\n\n"
+        "⚠️ *यह जानकारी DRAFT है — बड़े प्रकोप के लिए कृषि विशेषज्ञ से सलाह लें।*"
+    )
+
+def _healthy_reply_kn() -> str:
+    return (
+        "🌱 **ಆರೋಗ್ಯಕರ ಆಲೋ ವೇರಾ — ತಡೆಗಟ್ಟುವ ಆರೈಕೆ ಮಾರ್ಗದರ್ಶಿ**\n\n"
+        "**💧 ನೀರಾವರಿ:**\n"
+        "• ಆಳವಾಗಿ ನೀರು ಕೊಡಿ, ನಂತರ ಮೇಲಿನ 2 ಇಂಚು ಮಣ್ಣು ಒಣಗುವವರೆಗೆ ಕಾಯಿರಿ.\n"
+        "• ಕುಂಡದಲ್ಲಿ ನಿಂತ ನೀರು ಬಿಡಬೇಡಿ (ಬೇರು ಕೊಳೆತ ಆಗುತ್ತದೆ).\n\n"
+        "**☀️ ಬೆಳಕು:**\n"
+        "• ದಿನಕ್ಕೆ 6-8 ಗಂಟೆ ಪ್ರಕಾಶಮಾನ ಆದರೆ ಪರೋಕ್ಷ ಸೂರ್ಯನ ಬೆಳಕು.\n"
+        "• ಮಧ್ಯಾಹ್ನದ ನೇರ ಬಿಸಿಲನ್ನು ತಪ್ಪಿಸಿ — ಸನ್‌ಬರ್ನ್ ಆಗುತ್ತದೆ.\n\n"
+        "**🪴 ಮಣ್ಣು ಮತ್ತು ಕುಂಡ:**\n"
+        "• ಪರ್ಲೈಟ್ ಅಥವಾ ಒರಟು ಮರಳಿನೊಂದಿಗೆ ಕ್ಯಾಕ್ಟಸ್ ಮಿಶ್ರ ಮಣ್ಣು ಬಳಸಿ.\n"
+        "• ಯಾವಾಗಲೂ ನೀರು ಹರಿದು ಹೋಗುವ ರಂಧ್ರ ಇರುವ ಕುಂಡ ಬಳಸಿ.\n\n"
+        "✅ *ಆರೋಗ್ಯಕರ ಸಸ್ಯಗಳಿಗೆ ರಾಸಾಯನಿಕ ಚಿಕಿತ್ಸೆ ಬೇಡ.*"
+    )
+
+def _healthy_reply_hi() -> str:
+    return (
+        "🌱 **स्वस्थ एलो वेरा — निवारक देखभाल मार्गदर्शिका**\n\n"
+        "**💧 पानी देना:**\n"
+        "• गहराई से पानी दें, फिर ऊपरी 2 इंच मिट्टी पूरी तरह सूखने तक प्रतीक्षा करें।\n"
+        "• गमले में खड़ा पानी न छोड़ें (जड़ सड़ जाती है)।\n\n"
+        "**☀️ रोशनी:**\n"
+        "• प्रतिदिन 6-8 घंटे तेज़ लेकिन अप्रत्यक्ष धूप।\n"
+        "• तेज़ दोपहर की धूप से बचाएं — सनबर्न हो सकता है।\n\n"
+        "**🪴 मिट्टी और गमला:**\n"
+        "• पर्लाइट या मोटे रेत के साथ कैक्टस मिश्रण मिट्टी उपयोग करें।\n"
+        "• हमेशा जल निकासी छेद वाले गमले का उपयोग करें।\n\n"
+        "✅ *स्वस्थ पौधों के लिए किसी रासायनिक उपचार की आवश्यकता नहीं।*"
+    )
+
+def _greeting_reply_kn() -> str:
+    return (
+        "ನಮಸ್ಕಾರ! 👋 ನಾನು **AloeMithra**, ನಿಮ್ಮ ಆಲೋ ವೇರಾ ಆರೋಗ್ಯ ಸಹಾಯಕ!\n\n"
+        "ನಾನು ಈ ವಿಷಯಗಳ ಬಗ್ಗೆ ಉತ್ತರಿಸಬಲ್ಲೆ:\n"
+        "1. 🍂 **ತುಕ್ಕು ರೋಗ** (Aloe Rust)\n"
+        "2. 🥀 **ಆಂಥ್ರಾಕ್ನೋಸ್** (ಕಪ್ಪು ಕಲೆ)\n"
+        "3. 🍃 **ಎಲೆ ಚುಕ್ಕೆ** (Leaf Spot)\n"
+        "4. ☀️ **ಸನ್‌ಬರ್ನ್** (ಬಿಸಿಲು ಹಾನಿ)\n"
+        "5. 🌱 **ಸಾಮಾನ್ಯ ಆರೈಕೆ** (ನೀರು, ಮಣ್ಣು, ಬೆಳಕು)\n\n"
+        "ಕೇಳಿ: *'ತುಕ್ಕು ರೋಗ ಏನು?'* ಅಥವಾ *'ಎಲೆ ಚುಕ್ಕೆಗೆ ಏನು ಮಾಡಬೇಕು?'*"
+    )
+
+def _greeting_reply_hi() -> str:
+    return (
+        "नमस्ते! 👋 मैं **AloeMithra** हूं, आपका एलो वेरा स्वास्थ्य सहायक!\n\n"
+        "मैं इन विषयों पर जवाब दे सकता हूं:\n"
+        "1. 🍂 **जंग रोग** (Aloe Rust)\n"
+        "2. 🥀 **एन्थ्रेकनोज** (काले धब्बे)\n"
+        "3. 🍃 **पत्ती धब्बा** (Leaf Spot)\n"
+        "4. ☀️ **सनबर्न** (धूप से जलन)\n"
+        "5. 🌱 **सामान्य देखभाल** (पानी, मिट्टी, रोशनी)\n\n"
+        "पूछें: *'जंग रोग क्या है?'* या *'सनबर्न का इलाज?'*"
+    )
+
+def _fallback_reply_kn(original_msg: str) -> str:
+    return (
+        f"🌿 ನಿಮ್ಮ ಪ್ರಶ್ನೆ ಅರ್ಥವಾಯಿತು, ಆದರೆ **\"{original_msg[:60]}\"** ಗೆ ನಿರ್ದಿಷ್ಟ ಉತ್ತರ ಕಂಡು ಹಿಡಿಯಲಿಲ್ಲ.\n\n"
+        "ನಾನು ಇವುಗಳ ಬಗ್ಗೆ ಹೇಳಬಲ್ಲೆ:\n"
+        "• 🍂 ತುಕ್ಕು ರೋಗ\n• 🥀 ಆಂಥ್ರಾಕ್ನೋಸ್\n• 🍃 ಎಲೆ ಚುಕ್ಕೆ\n• ☀️ ಸನ್‌ಬರ್ನ್\n• 🌱 ಸಾಮಾನ್ಯ ಆರೈಕೆ"
+    )
+
+def _fallback_reply_hi(original_msg: str) -> str:
+    return (
+        f"🌿 आपका सवाल समझ आया, लेकिन **\"{original_msg[:60]}\"** के लिए कोई विशेष उत्तर नहीं मिला।\n\n"
+        "मैं इन विषयों पर जवाब दे सकता हूं:\n"
+        "• 🍂 जंग रोग\n• 🥀 एन्थ्रेकनोज\n• 🍃 पत्ती धब्बा\n• ☀️ सनबर्न\n• 🌱 सामान्य देखभाल"
+    )
+
+
+# ---------------------------------------------------------------------------
 # Main Entry Point
 # ---------------------------------------------------------------------------
 
-def generate_bot_reply(user_msg: str) -> str:
+def generate_bot_reply(user_msg: str, lang: str = "en") -> str:
     """
     Generate a research-safe, multilingual response for Aloe vera queries.
-    Supports English (typo-tolerant), Kannada, and Hindi.
+    Supports English (typo-tolerant), Kannada (kn), and Hindi (hi).
+    The `lang` parameter controls which language to reply in.
     """
     if not user_msg or not user_msg.strip():
+        if lang == "kn":
+            return _greeting_reply_kn()
+        if lang == "hi":
+            return _greeting_reply_hi()
         return _greeting_reply()
 
     original = user_msg.strip()
@@ -284,31 +478,63 @@ def generate_bot_reply(user_msg: str) -> str:
 
     # 1. Greeting
     if _any_keyword(GREET_KW, msg):
+        if lang == "kn":
+            return _greeting_reply_kn()
+        if lang == "hi":
+            return _greeting_reply_hi()
         return _greeting_reply()
 
     # 2. Aloe Rust — check before leaf spot to avoid partial matches
     if _any_keyword(RUST_KW, msg):
+        if lang == "kn":
+            return _rust_reply_kn()
+        if lang == "hi":
+            return _rust_reply_hi()
         return _rust_reply()
 
     # 3. Anthracnose
     if _any_keyword(ANTHR_KW, msg):
+        if lang == "kn":
+            return _anthracnose_reply_kn()
+        if lang == "hi":
+            return _anthracnose_reply_hi()
         return _anthracnose_reply()
 
     # 4. Leaf Spot
     if _any_keyword(LEAFSPOT_KW, msg):
+        if lang == "kn":
+            return _leafspot_reply_kn()
+        if lang == "hi":
+            return _leafspot_reply_hi()
         return _leafspot_reply()
 
     # 5. Sunburn
     if _any_keyword(SUNBURN_KW, msg):
+        if lang == "kn":
+            return _sunburn_reply_kn()
+        if lang == "hi":
+            return _sunburn_reply_hi()
         return _sunburn_reply()
 
     # 6. Healthy / General Care
     if _any_keyword(HEALTHY_KW, msg):
+        if lang == "kn":
+            return _healthy_reply_kn()
+        if lang == "hi":
+            return _healthy_reply_hi()
         return _healthy_reply()
 
     # 7. Generic symptom or treatment question — give menu
     if _any_keyword(SYMPTOM_KW + TREATMENT_KW, msg):
+        if lang == "kn":
+            return _greeting_reply_kn()
+        if lang == "hi":
+            return _greeting_reply_hi()
         return _greeting_reply()
 
     # 8. Fallback
+    if lang == "kn":
+        return _fallback_reply_kn(original)
+    if lang == "hi":
+        return _fallback_reply_hi(original)
     return _fallback_reply(original)
