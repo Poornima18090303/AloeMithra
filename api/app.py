@@ -29,6 +29,15 @@ from core.db import (
 from core.predictor import predict as ml_predict
 
 app = Flask(__name__)
+CORS(
+    app,
+    resources={r"/api/*": {"origins": [
+        "https://aloemithra-frontend.onrender.com",
+        "http://localhost:5173",
+        "http://localhost:3000"
+    ]}},
+    supports_credentials=True
+)
 @app.route("/", methods=["GET"])
 def home():
     return {
@@ -40,15 +49,6 @@ app.config.update(
     SESSION_COOKIE_SECURE=True,
     SESSION_COOKIE_HTTPONLY=True,
     SESSION_COOKIE_SAMESITE="None"
-)
-CORS(
-    app,
-    supports_credentials=True,
-    origins=[
-        "http://localhost:5173",
-        "http://localhost:3000",
-        "https://aloemithra-frontend.onrender.com"
-    ]
 )
 
 # ---------------------------------------------------------------------------
@@ -215,8 +215,16 @@ def api_analyze():
         return jsonify(result)
     except Exception as e:
         import traceback
-        traceback.print_exc()
-        return jsonify({"error": f"Analysis failed: {e}"}), 500
+        error_details = traceback.format_exc()
+
+        print("========== ANALYSIS ERROR ==========")
+        print(error_details)
+        print("====================================")
+
+        return jsonify({
+            "error": str(e),
+            "details": error_details
+        }), 500
 
 
 # ---------------------------------------------------------------------------
