@@ -30,6 +30,11 @@ from core.predictor import predict as ml_predict
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("ALOEMITHRA_SECRET", "aloemithra-dev-secret-2024")
+app.config.update(
+    SESSION_COOKIE_SECURE=True,
+    SESSION_COOKIE_HTTPONLY=True,
+    SESSION_COOKIE_SAMESITE="None"
+)
 CORS(
     app,
     supports_credentials=True,
