@@ -30,7 +30,15 @@ from core.predictor import predict as ml_predict
 
 app = Flask(__name__)
 app.secret_key = os.environ.get("ALOEMITHRA_SECRET", "aloemithra-dev-secret-2024")
-CORS(app, supports_credentials=True, origins=["http://localhost:5173", "http://localhost:3000"])
+CORS(
+    app,
+    supports_credentials=True,
+    origins=[
+        "http://localhost:5173",
+        "http://localhost:3000",
+        "https://aloemithra-frontend.onrender.com"
+    ]
+)
 
 # ---------------------------------------------------------------------------
 # Health
