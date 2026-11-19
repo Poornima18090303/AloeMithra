@@ -3,8 +3,9 @@ pillow>=10.0.0
 pytest>=8.0.0
 bcrypt>=4.0.0
 # For running the trained Keras 3 model (.keras):
-# tensorflow>=2.16.1
-# keras>=3.0.0
+tensorflow>=2.16.1
+keras>=3.0.0
 gunicorn
 Flask>=3.0.0
 Flask-Cors>=4.0.0
+numpy
