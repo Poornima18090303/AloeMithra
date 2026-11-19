@@ -6,3 +6,5 @@ bcrypt>=4.0.0
 # tensorflow>=2.16.1
 # keras>=3.0.0
 gunicorn
+Flask>=3.0.0
+Flask-Cors>=4.0.0
