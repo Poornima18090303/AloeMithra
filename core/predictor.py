@@ -1,4 +1,4 @@
-```python
+
 """
 Predictor integration layer for AloeMithra.
 
@@ -258,4 +258,3 @@ def predict(image: Image.Image) -> Dict[str, Any]:
             f"{MODEL_LOAD_ERROR if MODEL_LOAD_ERROR else 'Model unavailable.'}"
         )
     }
-```
