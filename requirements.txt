@@ -5,3 +5,4 @@ bcrypt>=4.0.0
 # For running the trained Keras 3 model (.keras):
 # tensorflow>=2.16.1
 # keras>=3.0.0
+gunicorn
