@@ -29,6 +29,12 @@ from core.db import (
 from core.predictor import predict as ml_predict
 
 app = Flask(__name__)
+@app.route("/", methods=["GET"])
+def home():
+    return {
+        "status": "success",
+        "message": "AloeMithra API is running"
+    }, 200
 app.secret_key = os.environ.get("ALOEMITHRA_SECRET", "aloemithra-dev-secret-2024")
 app.config.update(
     SESSION_COOKIE_SECURE=True,
