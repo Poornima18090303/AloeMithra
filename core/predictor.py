@@ -96,9 +96,10 @@ def predict(image: Image.Image) -> Dict[str, Any]:
                 result["label"] = top_label
                 
             return result
-        except Exception as e:
-            # Fall back to error reporting if model forward pass failed
-            pass
+       except Exception as e:
+          MODEL_LOAD_STATUS = "PREDICTION_FAILED"
+          MODEL_LOAD_ERROR = traceback.format_exc()
+          print("PREDICTION ERROR:", MODEL_LOAD_ERROR)
 
     # Safe fallback response when model is not yet loaded or file has no weights
     # Returns a valid dictionary meeting the contract
