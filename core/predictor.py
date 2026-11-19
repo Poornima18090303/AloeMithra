@@ -96,19 +96,20 @@ def predict(image: Image.Image) -> Dict[str, Any]:
                 result["label"] = top_label
                 
             return result
-       except Exception as e:
-          MODEL_LOAD_STATUS = "PREDICTION_FAILED"
-          MODEL_LOAD_ERROR = traceback.format_exc()
-          print("PREDICTION ERROR:", MODEL_LOAD_ERROR)
+               except Exception as e:
+                   MODEL_LOAD_STATUS = "PREDICTION_FAILED"
+                   MODEL_LOAD_ERROR = traceback.format_exc()
+                   print("PREDICTION ERROR:", MODEL_LOAD_ERROR)
 
-    # Safe fallback response when model is not yet loaded or file has no weights
-    # Returns a valid dictionary meeting the contract
+    # Safe fallback response
     return {
         "status": "retake_low_confidence",
         "confidence": 0.35,
         "second_label": "Healthy",
         "second_confidence": 0.25,
-        "probabilities": {cls_name: 0.20 for cls_name in CLASSES},
+        "probabilities": {
+            cls_name: 0.20 for cls_name in CLASSES
+        },
         "diagnostic_note": (
             f"Model status: {MODEL_LOAD_STATUS}. "
             f"{MODEL_LOAD_ERROR if MODEL_LOAD_ERROR else 'Awaiting trained weights or custom predictor.'}"
